@@ -1,3 +1,51 @@
 * {
   margin: 0;
 }
+.container {
+  background-image: url("https://cdn.pixabay.com/photo/2016/10/07/14/01/tangerines-1721620_960_720.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar {
+  height: 80px;
+  background: linear-gradient(45deg, #f3d123, transparent);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.navbar > ul {
+  list-style: none;
+  column-gap: 20px;
+  justify-content: center;
+  font-size: 30px;
+  align-items: center;
+  text-transform: capitalize;
+  display: flex;
+}
+.navbar > ul {
+  border-bottom: 2px solid transparent;
+}
+.navbar > ul > li:hover {
+  border-bottom: 2px solid black;
+}
+.navbar > h1 {
+  font-size: 70px;
+}
+
+.sidebar {
+  width: 200px;
+  background: linear-gradient(45deg, rgb(205, 194, 194), transparent);
+  height: 100vh;
+}
+
+.sidebar > ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar > ul > li {
+  border-bottom: 1px solid black;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}

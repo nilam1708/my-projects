@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+}
+
+.legend-page {
+  background-image: url("https://cdn.pixabay.com/photo/2015/12/29/14/51/mountains-1112911_960_720.jpg");
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 347px;
+  height: 406px;
+  border-radius: 20px;
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card:hover {
+  border: 1px solid rgb(212, 198, 198);
+}
+
+.card h1 {
+  text-align: center;
+  width: 212px;
+  height: 80px;
+  font-size: 64px;
+  font-family: revert;
+  color: white;
+}
+
+.card > input {
+  color: black;
+  text-align: center;
+  width: 255px;
+  height: 37px;
+  border-radius: 10px;
+  border: none;
+  background-color: #224957;
+  margin-top: 20px;
+}
+
+.card > p {
+  color: white;
+  font-size: 18px;
+}
+
+.card > button {
+  width: 255px;
+  height: 37px;
+  border-radius: 10px;
+  background-color: lightgreen;
+  color: black;
+}
+
+.card > input:hover {
+  border: none;
+}
+.forgot {
+  display: flex;
+  column-gap: 20px;
+  color: rgb(246, 255, 244);
+}

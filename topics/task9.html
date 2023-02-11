@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <style>
+      * {
+        margin: 0;
+      }
+      .container {
+        background-image: url("https://cdn.pixabay.com/photo/2018/03/02/13/38/vegetables-3193196_960_720.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card {
+        width: 300px;
+        height: 398px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        border-radius: 10px;
+      }
+
+      .card > img {
+        width: 100px;
+        height: 100px;
+        background: transparent;
+      }
+      .input-field {
+        display: flex;
+        row-gap: 1px;
+        flex-direction: column;
+      }
+      .card:hover {
+        border: 1px solid rgb(252, 233, 233);
+      }
+
+      .input-field > input {
+        background-color: rgb(110, 116, 240);
+        width: 204px;
+        color: white;
+        height: 28px;
+        border: none;
+        border-radius: 10px;
+        text-align: center;
+        text-transform: capitalize;
+      }
+
+      .input-field > button {
+        width: 204px;
+        background-color: rgb(110, 116, 240);
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+      }
+
+      .sign {
+        color: white;
+        display: flex;
+        column-gap: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img
+          src="https://cdn.pixabay.com/photo/2012/04/24/13/16/cart-40016_960_720.png"
+          alt=""
+        />
+        <div class="input-field">
+          <input type="text" placeholder="username" />
+          <br />
+          <input type="password" placeholder="password" />
+          <br />
+          <button>login</button>
+        </div>
+        <div class="sign">
+          <p>forgot password</p>
+          <p>sign in</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
