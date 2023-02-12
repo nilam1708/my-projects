@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ketki</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+      }
+
+      .containers {
+        width: 100%;
+        height: 100vh;
+      }
+
+      .nav.text-center {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 175px;
+        background-color: blue;
+        align-items: center;
+        height: 39px;
+      }
+
+      .nav > p {
+        font-size: 20px;
+        color: white;
+      }
+
+      .nav2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5px 165px;
+        background-color: white;
+        height: 60px;
+      }
+
+      .text {
+        display: flex;
+        column-gap: 20px;
+        font-size: x-large;
+      }
+
+      input[type="text"] {
+        border: 3px solid #ebe2e2;
+        width: 590px;
+        color: #ebe2e2;
+        border-radius: 9px;
+        padding: 3px 20px;
+      }
+
+      .position {
+        position: relative;
+      }
+
+      .nav2 > i {
+        position: absolute;
+        top: 20px;
+        left: 630px;
+      }
+
+      .nav3 {
+        width: 100%;
+
+        background-color: white;
+      }
+
+      .nav3 > ul {
+        list-style: none;
+        display: flex;
+        column-gap: 50px;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 0px;
+        color: #8d8181;
+        font-size: large;
+      }
+      .bg-Image {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-image: url("https://img.freepik.com/free-photo/stylish-korean-girl-young-woman-sunglasses-showing-smartphone-screen-mobile-phone-app-interface-website-standing-pink-background_1258-96171.jpg");
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 50px;
+        padding-right: 190px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="containers">
+      <div class="nav text-center">
+        <p>17 hours 38 minutes 13 seconds</p>
+        <p>Limited offers upto 25%</p>
+      </div>
+
+      <div class="nav2">
+        <div class="text">
+          <h1 class="text-danger">Web</h1>
+
+          <h1 class="text-primary">development</h1>
+        </div>
+        <div class="position">
+          <input type="text" placeholder="All products" />
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+
+      <div class="nav3">
+        <ul class="">
+          <li>Tech</li>
+          <li>Sports</li>
+          <li>Western</li>
+          <li>Health</li>
+          <li>World</li>
+        </ul>
+      </div>
+      <div class="bg-Image">
+        <div class="cards">
+          <h1 class="text-center">Register Now !</h1>
+          <div class="form-group">
+            <input type="text" placeholder="Name" class="form-control" />
+          </div>
+          <div class="form-group">
+            <input type="text" placeholder="Email" class="form-control" />
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              placeholder="Password"
+              class="form-control"
+            />
+          </div>
+          <div class="form-group">
+            <input type="number" placeholder="Number" class="form-control" />
+          </div>
+          <button class="btn btn-info form-control">Click here</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
