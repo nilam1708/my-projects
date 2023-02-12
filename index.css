@@ -3,50 +3,67 @@
 }
 .container {
   width: 100%;
-  background-image: url("https://cdn.pixabay.com/photo/2016/10/07/14/01/tangerines-1721620_960_720.jpg");
   height: 100vh;
+  background-image: url("https://cdn.pixabay.com/photo/2016/11/08/23/21/heart-1809653_960_720.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 .navbar {
-  height: 80px;
-  background: linear-gradient(45deg, #f3d123, transparent);
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-}
-.navbar > ul {
-  list-style: none;
-  column-gap: 20px;
-  justify-content: center;
-  font-size: 30px;
-  align-items: center;
-  text-transform: capitalize;
-  display: flex;
-}
-.navbar > ul {
-  border-bottom: 2px solid transparent;
-}
-.navbar > ul > li:hover {
-  border-bottom: 2px solid black;
+  height: 90px;
+  background: transparent;
 }
 .navbar > h1 {
-  font-size: 70px;
+  font-size: 61px;
+  color: crimson;
 }
 
+ul.navmenu {
+  border-bottom: 2px solid transparent;
+  list-style: none;
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+}
+
+.navmenu > li {
+  color: rgb(16, 16, 16);
+}
+
+.navmenu > li:hover {
+  border-bottom: 2px solid black;
+}
 .sidebar {
-  width: 200px;
-  background: linear-gradient(45deg, rgb(205, 194, 194), transparent);
+  width: 264px;
   height: 100vh;
+  background: linear-gradient(
+    45deg,
+    rgb(235, 34, 34),
+    black,
+    pink,
+    transparent
+  );
 }
 
 .sidebar > ul {
   list-style: none;
   padding: 0;
 }
+
 .sidebar > ul > li {
-  border-bottom: 1px solid black;
-  padding: 20px;
-  font-size: 30px;
   text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid black;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-family: fantasy;
+}
+.sidebar > ul > li:hover {
+  background-color: black;
 }
