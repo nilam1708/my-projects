@@ -14,32 +14,39 @@
         flex-wrap: wrap;
         gap: 20px;
       }
-      .child {
-        height: 150px;
-        background-color: green;
-        flex-basis: calc(16.66% - 20px);
+
+      .flex-item {
+        height: 200px;
+        background-color: red;
+        flex-basis: calc(20% - 20px);
       }
 
       @media (max-width: 1200px) {
-        .child {
+        .flex-item {
           flex-basis: calc(33.33% - 20px);
         }
       }
-      @media(max-width: 992px){
-        .child{
-          flex-basis
+
+      @media (max-width: 992px) {
+        .flex-item {
+          flex-basis: calc(50% - 20px);
+        }
+      }
+
+      @media (max-width: 768px) {
+        .flex-item {
+          flex-basis: 100%;
         }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="child"></div>
-      <div class="child"></div>
-      <div class="child"></div>
-      <div class="child"></div>
-      <div class="child"></div>
-      <div class="child"></div>
+      <div class="flex-item"></div>
+      <div class="flex-item"></div>
+      <div class="flex-item"></div>
+      <div class="flex-item"></div>
+      <div class="flex-item"></div>
     </div>
   </body>
 </html>

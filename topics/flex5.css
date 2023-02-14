@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+}
+
+.introduction {
+  display: flex;
+  column-gap: 10px;
+  flex-wrap: wrap;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head > h1 {
+  color: white;
+  padding: 119px;
+  font-size: 70px;
+}
+.list-item > a {
+  color: white;
+  font-size: 50px;
+  padding: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.list-item {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.list-item > a:hover {
+  background-color: #7eb1e6;
+  padding: 0px 250px;
+}
+
+.left > h1 {
+  font-size: 70px;
+  padding: 120px;
+  list-style: none;
+  color: white;
+}
+.right {
+  background-color: #123456;
+}
+.right > h1 {
+  text-align: center;
+  font-size: 70px;
+  color: wheat;
+  font-family: serif;
+  padding-bottom: 40px;
+}
+
+.image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.image > img {
+  border-radius: 200px;
+}
+
+.right > p {
+  margin: 30px 66px;
+  font-size: 31px;
+  line-height: 30px;
+  color: white;
+  font-family: cursive;
+}
+.left,
+.right {
+  height: 100vh;
+  flex-basis: calc(50% - 10px);
+  flex-grow: 1;
+}
+@meadia (max-width:768px) {
+  .left,
+  .right {
+    flex-basis: 100%;
+  }
+}
+
+/* introduction2 css */
+.introduction2 {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+.mywork,
+.resume {
+  height: 100vh;
+  flex-basis: calc(50% - 10px);
+  flex-grow: 1;
+}
+@media (max-width: 768px) {
+  .mywork,
+  .resume {
+    flex-basis: 100%;
+  }
+}
+.mywork {
+  background-color: wheat;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 70px;
+}
+
+.cards .card {
+  flex-basis: 50%;
+  height: 200px;
+}
+
+.card > img {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 37px;
+}
+
+.content > h1,
+p {
+  font-size: 40px;
+}
+.resume {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(99, 99, 214);
+}
+.resume > table {
+  width: calc(100% - 80px);
+  height: 100vh;
+  margin: 20px 20px;
+}
+.resume tbody > tr:nth-child(odd) {
+  background-color: white;
+}
+.resume tbody > tr:nth-child(even) {
+  color: white;
+}
+
+.resume tbody > tr > td {
+  font-size: 23px;
+  text-align: left;
+  padding: 10px 10px;
+  text-transform: capitalize;
+}
+.resume > thead,
+th {
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.content > h1 {
+  font-size: 80px;
+}
+
+/* introduction3 */
+
+.introduction3 {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+
+.swingby,
+.contact {
+  height: 100vh;
+  flex-basis: calc(50% - 10px);
+  flex-grow: 1;
+}
+@media (max-width: 768px) {
+  .swingby,
+  .contact {
+    flex-basis: 100%;
+  }
+}
+
+.swingby {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+}
+
+.contact {
+  background-color: #009688 !important;
+}
+
+.heading > h1 {
+  font-size: 62px;
+  font-family: sans-serif;
+}
+.para > p {
+  padding-top: 41px;
+  text-align: center;
+}
+
+.heading > h1 {
+  padding-bottom: 127px;
+}
+.input-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  background-color: white;
+  padding: 0 20px;
+}
+input {
+  width: 550px;
+  height: 71px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 125);
+}
+.h > h1 {
+  text-align: center;
+  font-size: 70px;
+}
+
+.h > p {
+  font-size: 59px;
+  text-align: center;
+}
+
+.btn > button {
+  font-size: 20px;
+  width: 100px;
+  height: 50px;
+  margin-left: 350px;
+  background-color: #009688 !important;
+}
+.btn > button:hover {
+  background-color: rgb(101, 151, 149) !important;
+}
+.footer > h1 {
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  font-size: 40px;
+}
